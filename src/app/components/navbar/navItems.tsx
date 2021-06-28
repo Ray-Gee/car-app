@@ -1,8 +1,8 @@
 import React from "react";
-import styled, { css } from 'styled-components';
-import tw from 'twin.macro';
-import { slide as Menu } from 'react-burger-menu'
-import { useMediaQuery } from 'react-responsive'
+import styled, { css } from "styled-components";
+import tw from "twin.macro";
+import { slide as Menu } from "react-burger-menu";
+import { useMediaQuery } from "react-responsive";
 import { SCREENS } from "../responsive";
 import menuStyles from "./menuStyles";
 
@@ -11,9 +11,9 @@ const ListContainer = styled.div`
     flex
     list-none
   `}
-`
+`;
 
-const NavItem = styled.li < { menu?: any } > `
+const NavItem = styled.li<{ menu?: any }>`
   ${tw`
     text-sm
     md:text-base
@@ -28,52 +28,55 @@ const NavItem = styled.li < { menu?: any } > `
     hover:text-gray-700
   `}
 
-  ${({ menu }) => menu && css`
-    ${tw`
+  ${({ menu }) =>
+    menu &&
+    css`
+      ${tw`
     text-white
     text-xl
     mb-3
     focus:text-white
       `}
-  `}
-`
+    `}
+`;
 
 export function NavItems() {
-  const isMobile = useMediaQuery({ maxWidth: SCREENS.sm })
+  const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
 
   if (isMobile)
     return (
       <Menu right styles={menuStyles}>
         <ListContainer>
           <NavItem menu>
-            <a href="#">Home</a>
+            <a href="home">Home</a>
           </NavItem>
           <NavItem menu>
-            <a href="#">Cars</a>
+            <a href="#cars">Cars</a>
           </NavItem>
           <NavItem menu>
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
           </NavItem>
           <NavItem menu>
-            <a href="#">Contact us</a>
+            <a href="#contact">Contact us</a>
           </NavItem>
         </ListContainer>
       </Menu>
+    );
 
-    )
-
-  return <ListContainer>
-    <NavItem>
-      <a href="#">Home</a>
-    </NavItem>
-    <NavItem>
-      <a href="#">Cars</a>
-    </NavItem>
-    <NavItem>
-      <a href="#">Services</a>
-    </NavItem>
-    <NavItem>
-      <a href="#">Contact us</a>
-    </NavItem>
-  </ListContainer>
+  return (
+    <ListContainer>
+      <NavItem>
+        <a href="#home">Home</a>
+      </NavItem>
+      <NavItem>
+        <a href="#cars">Cars</a>
+      </NavItem>
+      <NavItem>
+        <a href="#services">Services</a>
+      </NavItem>
+      <NavItem>
+        <a href="#contact">Contact us</a>
+      </NavItem>
+    </ListContainer>
+  );
 }

@@ -167,19 +167,19 @@ export function Footer() {
           <HeaderTitle>Our Links</HeaderTitle>
           <LinksList>
             <ListItem>
-              <a href="#">Home</a>
+              <a href="home">Home</a>
             </ListItem>
             <ListItem>
-              <a href="#">About Us</a>
+              <a href="#aboout">About Us</a>
             </ListItem>
             <ListItem>
-              <a href="#">Services</a>
+              <a href="#services">Services</a>
             </ListItem>
             <ListItem>
-              <a href="#">Models</a>
+              <a href="#models">Models</a>
             </ListItem>
             <ListItem>
-              <a href="#">Blog</a>
+              <a href="#blog">Blog</a>
             </ListItem>
           </LinksList>
         </SectionContainer>
@@ -187,19 +187,19 @@ export function Footer() {
           <HeaderTitle>Other Links</HeaderTitle>
           <LinksList>
             <ListItem>
-              <a href="#">FAQ</a>
+              <a href="#faq">FAQ</a>
             </ListItem>
             <ListItem>
-              <a href="#">Contact Us</a>
+              <a href="#contact">Contact Us</a>
             </ListItem>
             <ListItem>
-              <a href="#">Support</a>
+              <a href="#support">Support</a>
             </ListItem>
             <ListItem>
-              <a href="#">Privacy Policy</a>
+              <a href="#privacy">Privacy Policy</a>
             </ListItem>
             <ListItem>
-              <a href="#">Terms &amp; Conditions</a>
+              <a href="#terms">Terms &amp; Conditions</a>
             </ListItem>
           </LinksList>
         </SectionContainer>
