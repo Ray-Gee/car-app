@@ -80,7 +80,7 @@ export function AboutUs() {
   return (
     <AboutUsContainer>
       <CartContainer>
-        <img src={JeepImg} />
+        <img src={JeepImg} alt="" />
       </CartContainer>
       <InfoContainer>
         <Title>Fell The Experience With Our Rental Deals</Title>
